@@ -27,7 +27,7 @@ sudo pip3 install -r requirements.txt
 cp -rfp inventory/sample inventory/mycluster
 
 # Update Ansible inventory file with inventory builder
-declare -a IPS=(10.10.1.3 10.10.1.4 10.10.1.5)
+declare -a IPS=(84.201.134.139 84.201.130.228 62.84.118.203 62.84.116.185 84.201.173.4)
 CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
 
 # Review and change parameters under ``inventory/mycluster/group_vars``
